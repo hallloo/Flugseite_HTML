@@ -1,0 +1,244 @@
+@import url("http://fonts.cdnfonts.com/css/nats");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-desktop-padding {
+  padding: 8px;
+}
+
+.mobile-desktop {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 24px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .mobile-desktop {
+    flex-direction: row;
+    padding: 8px 80px;
+  }
+}
+
+li,
+button {
+  font-family: "nats";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 42px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a {
+  font-family: "nats";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 42px;
+  color: #000000;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 80px;
+  width: 100%;
+}
+
+nav .right {
+  display: flex;
+}
+
+nav .logo {
+  cursor: pointer;
+  width: 85px;
+  height: auto;
+  transition: all 0.3s ease 0s;
+}
+
+nav .logo:hover {
+  width: 90px;
+  height: auto;
+}
+
+nav .nav_links {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+nav .nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+  margin-bottom: 0;
+}
+
+nav .nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+nav .nav_links li a:hover {
+  color: rgba(0, 0, 0, 0.479);
+  font-size: 30px;
+}
+
+nav button {
+  padding: 1px 40px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 16px;
+  margin-bottom: 0;
+  margin-right: 100;
+  margin-top: 0;
+}
+
+nav button:hover {
+  background-color: rgba(255, 255, 255, 0.055);
+  color: #000000;
+  font-size: 25px;
+}
+
+main .ADS {
+  display: flex;
+  padding: 40px;
+  padding: 40px;
+  font-style: nats;
+  width: 800px;
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e7e5e5;
+  border-radius: 15px;
+}
+
+.sign-in {
+  background-color: #000000;
+}
+
+main .card:hover {
+  transform: scale(1.05);
+}
+
+.nav_links li a .current {
+  text-decoration: underline;
+}
+
+/* Bordered form */
+form {
+  border: 3px solid #00000000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  font-style: nats;
+  border-radius: 10px;
+  background-color: #c2c2c200;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="list"] {
+  width: 100%;
+  padding: 17px 22px;
+  margin: 30px 0;
+  display: inline-block;
+  border: 1px solid rgba(136, 136, 136, 0.507);
+  box-sizing: border-box;
+  font-style: nats;
+  border-radius: 10px;
+  height: 65px;
+  background-color: #ffffff;
+}
+
+main button {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+  transition: all 0.2s ease 0s;
+  font-size: 30px;
+  font-style: nats;
+}
+
+button:hover {
+  transform: scale(1.02);
+  background-color: #e7e7e7;
+  color: #000000;
+}
+
+.container {
+  font-family: nats;
+  font-size: 20px;
+  color: #000000b4;
+  background-color: #16161600;
+  gap: 32px;
+  margin-bottom: 27%;
+  text-align: center;
+}
+
+.container .ADTEXT {
+  width: 50%;
+}
+
+.container .inputs {
+  width: 50%;
+}
+
+main button {
+  margin-top: 1px;
+  height: 85px;
+}
+
+input {
+  background-color: #00000000;
+}
+
+label {
+  background-color: #00000000;
+}
+
+nav .current {
+  border-bottom: 3px solid #000;
+  padding-bottom: 3px;
+}
+.ty {
+  font-family: nats;
+  font-size: 55px;
+  color: rgb(66, 66, 66);
+  margin-bottom: 10%;
+  text-align: center;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 375px) {
+  /* span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  } */
+  main .ADS {
+    display: flex;
+    padding: 5px;
+    font-style: nats;
+    width: 90cm;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e7e5e5;
+    border-radius: 15px;
+  }
+}

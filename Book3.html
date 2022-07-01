@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flüge </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="Book3.css" rel="stylesheet">
+  <link rel="icon" href="/assets/img/logo.png" </head>
+
+<body>
+  <nav class="mobile-desktop mobile-desktop-padding">
+    <img class="logo" src="/assets/img/logo.png" alt="logo">
+    <div class="right mobile-desktop">
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="/Book.html">Book</a></li>
+        <li><a href="/Info.html">Info</a></li>
+        <li><a href="/Info.html#rectangles">Service</a></li>
+      </ul>
+      <a class="cta" href="/Sign_in.html"><button>Sign In</button></a>
+    </div>
+  </nav>
+
+
+  <main>
+    <section class="ADS">
+
+      <form action="action_page.php" method="post">
+        <div class="container">
+          <div class="inputs">
+            <input type="text"  id="N" placeholder="Name" name="From" required>
+
+            <input type="text" list="Takeoff" id="AD" placeholder="Adress
+            " name="Takeoff" required>
+            <datalist id="Takeoff">
+
+            </datalist>
+
+            <input type="list" list="Payment" id="Pay" placeholder="Payment" name="Passengers" required>
+            <datalist id="Payment">
+              <option value="PayPal">
+              <option value="Rechnung">
+              <option value="Kreditkarte">
+            </datalist>
+          </div>
+
+            <div class="inputs2">
+              <input type="text"  id="LN" placeholder="Last Name" name="Airline" required>
+
+              <input type="text" list="Numbers" id="Zip" placeholder="Zip Code" name="" required>
+
+              <input type="text"  id="Mail" placeholder="E-Mail" name="Class" required>
+              
+            </div>
+
+
+          
+        </div>
+
+        <button type="submit">Book</button>
+        <a class="cta btn" href="/Sign_in.html">Sign In</a>
+
+      </form>
+
+    </section>
+
+
+</body>
+
+
+</html>

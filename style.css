@@ -1,0 +1,228 @@
+@import url("http://fonts.cdnfonts.com/css/nats");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.mobile-desktop-padding {
+  padding: 8px;
+}
+
+.mobile-desktop {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 24px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .mobile-desktop {
+    flex-direction: row;
+  }
+  .mobile-desktop-padding {
+    padding: 8px 80px;
+  }
+}
+
+li,
+button {
+  font-family: "nats";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 42px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a {
+  font-family: "nats";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 42px;
+  color: #000000;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 80px;
+  width: 100%;
+}
+
+nav .logo {
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0;
+  width: 85px;
+  height: auto;
+  transition: all 0.3s ease 0s;
+}
+
+nav .logo:hover {
+  width: 90px;
+  height: auto;
+}
+
+nav .nav_links {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+nav .nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+  margin-bottom: 0;
+}
+
+nav .nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+nav .nav_links li a:hover {
+  color: rgba(0, 0, 0, 0.479);
+  font-size: 30px;
+}
+
+nav button {
+  padding: 1px 40px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 100px;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+nav button:hover {
+  background-color: rgba(255, 255, 255, 0.055);
+  color: #000000;
+  font-size: 25px;
+}
+
+.header {
+  background-image: url("/assets/img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 700px;
+  margin: 0px 80px 29px 80px;
+  position: relative;
+  transition: all 0.25s ease;
+  border-radius: 12px;
+}
+
+.header:hover {
+  transform: scale(1.002);
+}
+.header .HEYTEXT {
+  color: #ffffff;
+  font-family: nats;
+  font-size: 70px;
+  margin-bottom: 70px;
+  padding-left: 8%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  line-height: auto;
+}
+
+header .Searchbutton {
+  font-size: 25px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 60px;
+  border-radius: 16px;
+  position: absolute;
+  right: 150px;
+  bottom: -40px;
+  transition: all 0.25s ease;
+}
+
+.header .Searchbutton:hover {
+  font-size: 28px;
+}
+
+body {
+  background-image: url(assets/img/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% calc(100% + 97vh + 170px);
+}
+
+main .ADS {
+  display: flex;
+  gap: 16px;
+  padding: 70px;
+  padding: 80px;
+}
+
+main .card {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease 0s;
+}
+
+main .card .img {
+  max-height: 300px;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .card .title {
+  background-color: #353535;
+  width: 100%;
+  min-height: 64px;
+  max-height: 64;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 36px;
+  padding: 16px;
+}
+
+main .card:hover {
+  transform: scale(1.05);
+}
+
+nav .current {
+  border-bottom: 3px solid #000;
+  padding-bottom: 3px;
+}
+
+.textend {
+  font-size: 35px;
+  font-family: nats;
+  color: white;
+  margin-top: 5%;
+  text-align: justify;
+  width: 95%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.Infos {
+  display: flex;
+  gap: 2%;
+}
+.Infos .rectangles {
+  background: #ce8888;
+  flex-basis: 25%;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

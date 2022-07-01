@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flüge </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="Book2.css" rel="stylesheet">
+  <link rel="icon" href="/assets/img/logo.png" </head>
+
+<body>
+  <nav class="mobile-desktop mobile-desktop-padding">
+    <img class="logo" src="/assets/img/logo.png" alt="logo">
+    <div class="right mobile-desktop">
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="/Book.html">Book</a></li>
+        <li><a href="/Info.html">Info</a></li>
+        <li><a href="/Info.html#rectangles">Service</a></li>
+      </ul>
+      <a class="cta" href="/Sign_in.html"><button>Sign In</button></a>
+    </div>
+  </nav>
+
+
+  <main>
+    <section class="ADS">
+
+      <form action="action_page.php" method="post">
+        <div class="container">
+          <div class="inputs">
+            <input type="text"  id="ice-cream-choice" placeholder="From" name="From" required>
+
+            <input  type=text list="Takeoff" id="Date2" placeholder="Takeoff" onfocus="(this.type='date')"  name="Takeoff" required>
+            <datalist id="Takeoff">
+
+            </datalist>
+
+            <input type="list" list="Numbers" id="ice-cream-choice" placeholder="Passengers" name="Passengers" required>
+            <datalist id="Numbers">
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+              <option value="5">
+              <option value="6">
+            </datalist>
+          </div>
+
+            <div class="inputs2">
+              <input type="text"  id="ice-cream-choice" placeholder="To" name="Airline" required>
+
+              <input type=text id="Date" placeholder="Return"  onfocus="(this.type='date')" name="date2" required >
+
+              <input type="list" list="Numbers2" id="ice-cream-choice" placeholder="Bags" name="Class" required>
+              <datalist id="Numbers2">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+              </datalist>
+              
+            </div>
+
+
+          
+        </div>
+
+        <button type="submit">See options</button>
+
+      </form>
+
+    </section>
+
+
+</body>
+
+
+</html>
